@@ -1,0 +1,22 @@
+{
+  "name": "mp9-uf2-act4-advanced-image-features-davidvilanova11",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/aAekfEl5)\r # Advanced Image Features in HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cirvianum-DAW/mp9-uf2-act4-advanced-image-features-DavidVilanova11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cirvianum-DAW/mp9-uf2-act4-advanced-image-features-DavidVilanova11/issues"
+  },
+  "homepage": "https://github.com/Cirvianum-DAW/mp9-uf2-act4-advanced-image-features-DavidVilanova11#readme",
+  "dependencies": {
+    "lightbox2": "^2.11.4"
+  }
+}

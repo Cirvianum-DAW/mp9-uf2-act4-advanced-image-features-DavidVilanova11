@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Lightbox</title>
+    <!-- Include Lightbox CSS -->
+    <link href="/css/lightbox.css" rel="stylesheet" />
+    <!-- Include jQuery (required by Lightbox) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Lightbox JavaScript (Lightbox + jQuery) -->
+    <script src="path/to/lightbox-plus-jquery.js"></script>
+    <!-- Custom CSS for gallery layout -->
+    <style>
+        /* Define your gallery layout using CSS grid or flexbox */
+        .gallery {
+            display: flex;
+            /* Use flexbox to arrange images horizontally */
+            flex-wrap: wrap;
+            /* Allow images to wrap to the next line if necessary */
+            gap: 20px;
+            /* Gap between images */
+        }
+
+        .gallery img {
+            max-width: 100%;
+            /* Ensure images don't exceed their container's width */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <!-- Insert multiple images with Lightbox2 -->
+        <a href="/img/mountain-lake.jpg" data-lightbox="image-1" data-title="My caption"><img
+                src="/img/mountain-lake-thumb.jpg" alt="Image 1"></a>
+        <a href="/img/colorful-abstract.webp" data-lightbox="roadtrip"><img src="/img/colorful-abstract-thumb.webp"
+                alt="Image 2"></a>
+        <a href="/img/stunning-landscape.avif" data-lightbox="roadtrip"><img src="/img/stunning-landscape-thumb.avif"
+                alt="Image 3"></a>
+        <!-- Add more images as needed -->
+    </div>
+</body>
+
+</html>
