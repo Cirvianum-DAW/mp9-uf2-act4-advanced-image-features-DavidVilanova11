@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Elements</title>
+    <style>
+        /* CSS styles for the figure and figcaption */
+        figure {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 0;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Figure Elements</h1>
+    <figure>
+        <!-- Using picture element for art direction -->
+        <picture>
+            <!-- Source for smaller screens -->
+            <source media="(max-width: 400px)" srcset="/img/crocodile-jumping-art-2.jpg">
+            <!-- Source for medium-sized screens -->
+            <source media="(min-width: 401px) and (max-width: 800px)" srcset="/img/crocodile-jumping-art-1.jpg">
+            <!-- Default source for larger screens -->
+            <source srcset="/img/crocodile-jumping.jpg">
+            <!-- Fallback for browsers that do not support the picture element -->
+            <img src="/img/crocodile-jumping.jpg" alt="Description of the image">
+        </picture>
+        <!-- Caption for the image -->
+        <figcaption>This is the caption for the image.</figcaption>
+    </figure>
+    <!-- Explanation of the purpose of figure and figcaption elements -->
+    <p>The <code>&lt;figure&gt;</code> element is used to encapsulate media content, such as images, illustrations,
+        diagrams, videos, etc., along with their captions. It helps in associating the caption with the media content.
+        The <code>&lt;figcaption&gt;</code> element provides a caption or description for the content inside the
+        <code>&lt;figure&gt;</code>.
+    </p>
+</body>
+
+</html>
