@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>                                    
     <title>Figure Elements</title>
     <style>
         /* CSS styles for the figure and figcaption */
@@ -32,6 +33,26 @@
 </head>
 
 <body>
+    <nav class="bg-orange-500">
+        <ul class="flex">
+          <li class="mr-6">
+            <a class="text-white hover:text-orange-200" href="basic_image.html">Basic Image</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-white hover:text-orange-200" href="resolution_switching.html">Resolution Switching</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-white hover:text-orange-200" href="image_alignment.html">Image alignment</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-white hover:text-orange-200" href="image_gallery.html">Thumbnail</a>
+          </li>
+          <li>
+            <a class="text-white hover:text-orange-200" href="figure_picture.html">Art direction</a>
+          </li>
+        </ul>
+      </nav>
+      
     <h1>Figure Elements</h1>
     <figure>
         <!-- Using picture element for art direction -->
@@ -46,13 +67,12 @@
             <img src="/img/crocodile-jumping.jpg" alt="Description of the image">
         </picture>
         <!-- Caption for the image -->
-        <figcaption>This is the caption for the image.</figcaption>
+        <figcaption>Cocodril alimentant-se.</figcaption>
     </figure>
+    <br>
     <!-- Explanation of the purpose of figure and figcaption elements -->
-    <p>The <code>&lt;figure&gt;</code> element is used to encapsulate media content, such as images, illustrations,
-        diagrams, videos, etc., along with their captions. It helps in associating the caption with the media content.
-        The <code>&lt;figcaption&gt;</code> element provides a caption or description for the content inside the
-        <code>&lt;figure&gt;</code>.
+    <p>L'element <code>&lt;figure&gt;</code> s'utilitza per encapsular el contingut media, com imatges, il·lustracions,
+        diagrames, videos, etc., de la mà amb els captions. Ajuda a associar una descripció a través d'un contingut media.
     </p>
 </body>
 
