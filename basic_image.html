@@ -4,54 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>                                    
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Exercise 1: Basic Image</title>
 </head>
 
 <body>
     <nav class="bg-orange-500">
         <ul class="flex">
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="basic_image.html">Basic Image</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="resolution_switching.html">Resolution Switching</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="image_alignment.html">Image alignment</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="image_gallery.html">Thumbnail</a>
-          </li>
-          <li>
-            <a class="text-white hover:text-orange-200" href="figure_picture.html">Art direction</a>
-          </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="basic_image.html">Basic Image</a>
+            </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="resolution_switching.html">Resolution Switching</a>
+            </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="image_alignment.html">Image alignment</a>
+            </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="image_gallery.html">Thumbnail</a>
+            </li>
+            <li>
+                <a class="text-white hover:text-orange-200" href="figure_picture.html">Art direction</a>
+            </li>
         </ul>
-      </nav>
-      
-    <img src="https://images.photowall.com/products/44361/mountain-lake.jpg?h=699&q=85" title="lake and mountain"
-        style="width: 400px;" alt="A beautiful landscape with mountains and a lake">
-    <!-- Replace "image_url.jpg" with the URL of your chosen image -->
+    </nav>
+    <main class="flex">
+        <div class="imgContainer">
+            <img src="https://images.photowall.com/products/44361/mountain-lake.jpg?h=699&q=85"
+                title="lake and mountain" style="width: 400px;" alt="A beautiful landscape with mountains and a lake">
+            <!-- Replace "image_url.jpg" with the URL of your chosen image -->
 
-    <img src="https://t4.ftcdn.net/jpg/05/58/78/99/360_F_558789908_0aJHF5q49YUwkXJ183ntpQgFIyCgQTWK.webp"
-        style="width: 400px;" alt="A colorful abstract image in WEBP format" width="300" height="200">
-    <!-- Replace "image.webp" with the URL of your chosen WEBP image -->
+            <img src="https://t4.ftcdn.net/jpg/05/58/78/99/360_F_558789908_0aJHF5q49YUwkXJ183ntpQgFIyCgQTWK.webp"
+                style="width: 400px;" alt="A colorful abstract image in WEBP format" width="300" height="200">
+            <!-- Replace "image.webp" with the URL of your chosen WEBP image -->
 
-    <img src="https://www.befunky.com/images/wp/wp-2018-03-Landscape-Photography-4.jpg?auto=avif,webp&format=jpg&width=944"
-        style="width: 400px;" alt="A stunning landscape in AVIF format" width="400" height="250">
-    <!-- Replace "image.avif" with the URL of your chosen AVIF image -->
+            <img src="https://www.befunky.com/images/wp/wp-2018-03-Landscape-Photography-4.jpg?auto=avif,webp&format=jpg&width=944"
+                style="width: 400px;" alt="A stunning landscape in AVIF format" width="400" height="250">
+            <!-- Replace "image.avif" with the URL of your chosen AVIF image -->
 
+        </div>
 
-    <p>L'atribut alt s'utilitza per quan no podem veure les imatges per algun motiu es mostra el text que descriu
-        l'imatge o també quan deixem el ratolí a sobre d'una imatge en descriu el que representa si ho combinem amb un
-        title.</p>
-
-    <p>Els atributs d'amplada i alçada determinen la mida de visualització de la imatge a la pàgina web. No reflecteixen
-        necessàriament la mida real del fitxer d'imatge. Aquests atributs serveixen principalment per controlar la
-        disposició i garantir l'espaiat adequat dins del document. La mida real del fitxer d'imatge ve determinada per
-        les seves dimensions i resolució.</p>
-
-
+        <div class="textContainer m-2">
+            <strong>Perquè serveix l'etiqueta alt?</strong>
+            <p>L'atribut alt s'utilitza per quan no podem veure les imatges per algun motiu es mostra el text que
+                descriu
+                l'imatge o també quan deixem el ratolí a sobre d'una imatge en descriu el que representa si ho combinem
+                amb un
+                title.</p>
+            <br>
+            <strong>Diferència entre mida de la imatge real i atributs width i height</strong>
+            <p>Els atributs d'amplada i alçada determinen la mida de visualització de la imatge a la pàgina web. No
+                reflecteixen
+                necessàriament la mida real del fitxer d'imatge. Aquests atributs serveixen principalment per controlar
+                la
+                disposició i garantir l'espaiat adequat dins del document. La mida real del fitxer d'imatge ve
+                determinada per
+                les seves dimensions i resolució.</p>
+        </div>
+    </main>
 </body>
 
 </html>

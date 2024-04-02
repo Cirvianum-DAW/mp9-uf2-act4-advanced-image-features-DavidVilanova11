@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>                                    
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Exercise 5: Responsive Images</title>
     <style>
         /* CSS style to make images responsive */
@@ -20,42 +20,48 @@
 <body>
     <nav class="bg-orange-500">
         <ul class="flex">
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="basic_image.html">Basic Image</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="resolution_switching.html">Resolution Switching</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="image_alignment.html">Image alignment</a>
-          </li>
-          <li class="mr-6">
-            <a class="text-white hover:text-orange-200" href="image_gallery.html">Thumbnail</a>
-          </li>
-          <li>
-            <a class="text-white hover:text-orange-200" href="figure_picture.html">Art direction</a>
-          </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="basic_image.html">Basic Image</a>
+            </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="resolution_switching.html">Resolution Switching</a>
+            </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="image_alignment.html">Image alignment</a>
+            </li>
+            <li class="mr-6">
+                <a class="text-white hover:text-orange-200" href="image_gallery.html">Thumbnail</a>
+            </li>
+            <li>
+                <a class="text-white hover:text-orange-200" href="figure_picture.html">Art direction</a>
+            </li>
         </ul>
-      </nav>
-      
+    </nav>
+
     <h1>Clickable Image</h1>
-    <!-- Include your image and specify the usemap attribute to link it with the map -->
-    <img src="/img/bentley.webp" alt="Bentley Image" width="859" height="872" border="0" usemap="#map" />
+    <main class="flex">
+    <div>
+        <!-- Include your image and specify the usemap attribute to link it with the map -->
+        <img src="/img/bentley.webp" alt="Bentley Image" width="859" height="872" border="0" usemap="#map" />
 
-    <!-- Include your image map directly -->
-    <map name="map">
-        <!-- Copy and paste the contents of your image map file here -->
-        <!-- Make sure to adjust the coordinates and href attributes as needed -->
-        <area shape="circle" coords="423,220,73"
-            href="http://www.flipkart.com/automotive/car-bike-accessories/car-interior-exterior/car-interior/car-interior-fans/pr?sid=0hx,bwd,nu0,xoz,hp7" />
-        <area shape="circle" coords="650,306,66"
-            href="http://www.fruugo.es/1-tonelada-car-jack-scissor-jack-heavy-duty-lifting-jack-lift-wind-up-tools-for-car-van-emergency-car-repair-herramienta-de-cambio-de-neumaticos/p-115376064-242783796?language=es" />
-        <area shape="circle" coords="720,478,66" href="http://ifwelovevs.xyz/product_details/44449195.html" />
-        <!-- Add more <area> tags as needed for additional clickable areas -->
-    </map>
-
-    <p>La propietat max-width garanteix que la imatge no superi mai una certa amplada màxima</p>
-
+        <!-- Include your image map directly -->
+        <map name="map">
+            <!-- Copy and paste the contents of your image map file here -->
+            <!-- Make sure to adjust the coordinates and href attributes as needed -->
+            <area shape="circle" coords="423,220,73"
+                href="http://www.flipkart.com/automotive/car-bike-accessories/car-interior-exterior/car-interior/car-interior-fans/pr?sid=0hx,bwd,nu0,xoz,hp7" />
+            <area shape="circle" coords="650,306,66"
+                href="http://www.fruugo.es/1-tonelada-car-jack-scissor-jack-heavy-duty-lifting-jack-lift-wind-up-tools-for-car-van-emergency-car-repair-herramienta-de-cambio-de-neumaticos/p-115376064-242783796?language=es" />
+            <area shape="circle" coords="720,478,66" href="http://ifwelovevs.xyz/product_details/44449195.html" />
+            <!-- Add more <area> tags as needed for additional clickable areas -->
+        </map>
+    </div>
+    <br>
+    <div class="m-2">
+        <strong>Com la propietat `max-width` ajuda a les imatges a ser responsive?</strong>
+        <p>La propietat max-width garanteix que la imatge no superi mai una certa amplada màxima</p>
+    </div>
+</main>
 </body>
 
 </html>
