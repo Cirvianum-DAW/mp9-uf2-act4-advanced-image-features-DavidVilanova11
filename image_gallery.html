@@ -6,31 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>                                    
     <title>Image Gallery with Lightbox</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <!-- Include Lightbox CSS -->
-    <link href="/css/lightbox.css" rel="stylesheet" />
     <!-- Include jQuery (required by Lightbox) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- Include Lightbox JavaScript (Lightbox + jQuery) -->
-    <script src="path/to/lightbox-plus-jquery.js"></script>
+    <!-- <script src="path/to/lightbox-plus-jquery.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <!-- Custom CSS for gallery layout -->
-    <style>
-        /* Define your gallery layout using CSS grid or flexbox */
-        .gallery {
-            display: flex;
-            /* Use flexbox to arrange images horizontally */
-            flex-wrap: wrap;
-            /* Allow images to wrap to the next line if necessary */
-            gap: 20px;
-            /* Gap between images */
-        }
-
-        .gallery img {
-            max-width: 100%;
-            /* Ensure images don't exceed their container's width */
-            height: auto;
-            /* Maintain aspect ratio */
-        }
-    </style>
 </head>
 
 <body>
@@ -38,19 +21,28 @@
         <ul class="flex">
           <li class="mr-6">
             <a class="text-white hover:text-orange-200" href="basic_image.html">Basic Image</a>
-          </li>
-          <li class="mr-6">
+        </li>
+        <li class="mr-6">
             <a class="text-white hover:text-orange-200" href="resolution_switching.html">Resolution Switching</a>
-          </li>
-          <li class="mr-6">
+        </li>
+        <li class="mr-6">
             <a class="text-white hover:text-orange-200" href="image_alignment.html">Image alignment</a>
-          </li>
-          <li class="mr-6">
+        </li>
+        <li class="mr-6">
             <a class="text-white hover:text-orange-200" href="image_gallery.html">Thumbnail</a>
-          </li>
-          <li>
-            <a class="text-white hover:text-orange-200" href="figure_picture.html">Art direction</a>
-          </li>
+        </li>
+        <li class="mr-6">
+          <a class="text-white hover:text-orange-200" href="figure_picture.html">Art direction</a>
+        </li>
+        <li class="mr-6">
+            <a class="text-white hover:text-orange-200" href="svg_modificat.html">Palmera modificada</a>
+        </li>
+        <li class="mr-6">
+            <a class="text-white hover:text-orange-200" href="logo_modificat.html">Logo gradient switch</a>
+        </li>
+        <li class="mr-6">
+            <a class="text-white hover:text-orange-200" href="logo_creat.html">Logo Creation</a>
+        </li>
         </ul>
       </nav>
       
@@ -58,15 +50,15 @@
     <!-- Image Gallery -->
     <div class="gallery">
         <!-- Insert multiple images with Lightbox2 -->
-        <a href="/img/mountain-lake.jpg" data-lightbox="image-1" data-title="My caption"><img
+        <a href="/img/mountain-lake.jpg" data-lightbox="my-gallery" data-title="My caption"><img
                 src="/img/mountain-lake-thumb.jpg" alt="Image 1"></a>
-        <a href="/img/colorful-abstract.webp" data-lightbox="roadtrip"><img src="/img/colorful-abstract-thumb.webp"
+        <a href="/img/colorful-abstract.webp" data-lightbox="my-gallery"><img src="/img/colorful-abstract-thumb.webp"
                 alt="Image 2"></a>
-        <a href="/img/stunning-landscape.avif" data-lightbox="roadtrip"><img src="/img/stunning-landscape-thumb.avif"
+        <a href="/img/stunning-landscape.avif" data-lightbox="my-gallery"><img src="/img/stunning-landscape-thumb.avif"
                 alt="Image 3"></a>
-        <p>El avif no funciona i descarrega la imatge (l'última).</p>
         <!-- Add more images as needed -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
